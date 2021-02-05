@@ -6,34 +6,45 @@
 		<title>Apache2</title>
 	</head>
 
-	<body>
-		<header>		
-		</header>
+	<body class="backgroundApache2">
+		<nav>
+			<div class="navigation">
+				<ul>
+					<li> <a href="index.html">INICIO<a/> </li>
+					<li> <a href="apache2.html">APACHE<a/> </li>
+					<li> <a href="php.html">PHP<a/> </li>
+				</ul>
+			</div>
+		</nav>
+
 		<main>
-			<p>Use o comando "whereis para descobrir onde estão os arquivos de instalação do apache</p>
-			<p># whereis apache2</p>
-			<p>O retorno do comando deve ser algo como:</p>
-			<p>/usr/sbin/apache2 /etc/apache2 /usr/lib/apache2 /usr/share/apache2 /usr/share/man/man8/apache2.8.gz</p>
-			<p>Onde:
-			<p>/usr/sbin/apache2 é o diretório do binário principal do apache;</p>
-			<p>/usr/lib/apache2 é a biblioteca do apache2;</p>
-			<p>/usr/share/apache são os objetos padrões do apache.</p>
-			<p>/usr/share/man/man8/apache2.8.gz é o manual do apache.</p>
+			<div class="pageApache2">
+				<p>Use o comando "whereis" para descobrir onde estão os arquivos de instalação do apache</p>
+				<p># whereis apache2</p>
+				<p>O retorno do comando deve ser algo como:</p>
+				<p>/usr/sbin/apache2 /etc/apache2 /usr/lib/apache2 /usr/share/apache2 /usr/share/man/man8/apache2.8.gz</p>
+				<p>Onde:
+				<p>/usr/sbin/apache2 é o diretório do binário principal do apache;</p>
+				<p>/usr/lib/apache2 é a biblioteca do apache2;</p>
+				<p>/usr/share/apache são os objetos padrões do apache.</p>
+				<p>/usr/share/man/man8/apache2.8.gz é o manual do apache.</p>
 
-			<p>Reinicia ou para ou inicia o servidor Apache2:</p>
-			<p># /etc/init.d/apache2 restart | stop | start</p>
-			<p># systemctl restart | stop | start</p>
+				<p>Reinicia ou para ou inicia o servidor Apache2:</p>
+				<p># /etc/init.d/apache2 restart | stop | start</p>
+				<p># systemctl restart | stop | start</p>
 
-			<p>Verifica o status do servidor apache2</p>
-			<p># systemctl status apache2</p>
+				<p>Verifica o status do servidor apache2</p>
+				<p># systemctl status apache2</p>
 
-			<p>Debugar um virtual host apache2</p>
-			<p># /usr/sbin/apache2ctl -S </p>
+				<p>Debugar um virtual host apache2</p>
+				<p># /usr/sbin/apache2ctl -S </p>
 
-			<p>Para criar um virtual host precisa criar um arquivo "exemplo.conf" na pasta "/etc/apache2/sites-enabled", dica: copia o modelo do defaut.conf</p>
-			<p>arquivo "/etc/hosts" configura os hostlocais da sua maquina, da oara criar novos hosts</p>
-			<p>pasta "/etc" fica os arquivos de configuração do linux</p>
-			<p>Pasta "/var/www/" é o padrão para htmls do servidor<p>
+				<p>Para criar um virtual host precisa criar um arquivo "exemplo.conf" na pasta "/etc/apache2/sites-enabled", dica: copia o modelo do defaut.conf</p>
+				<p>arquivo "/etc/hosts" configura os hostlocais da sua maquina, da oara criar novos hosts</p>
+				<p>Pasta "/etc" fica os arquivos de configuração do linux</p>
+				<p>Pasta "/var/www/" é o padrão para htmls do servidor<p>
+				<p>Pasta	"/var/log/apache2/" ficam os registros(acesso, erro)</p>
+			</div>
 		</main>
 	</body>
 	

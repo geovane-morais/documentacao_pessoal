@@ -1,16 +1,67 @@
 .page
 {
+	display: flex;	
 	background-color:lightblue;
-	display: flex;
 	flex-direction: column ;
 	align-items: center;
 	justify-content:flex-start;
 }
+
+
+.backgroundApache2
+{
+	background-image: url("/images/background1.jpg");
+   background-size: cover;
+	background-attachment: fixed;
+}
+
+body
+{
+	background-color: black;
+}
+
+.pageApache2
+{
+	/*Colocação da borda*/
+	max-width: 100%;
+	margin: 10px 1% 1% 1%;
+	border: 2px solid black;
+	padding:5px 25px 5px 25px;
+	
+	/*Formatação do contudo*/
+	align-items: left;
+	font-family: Sans-serif;
+	font-size: 105%;
+	color:gray;
+}
+
 h1
 {
 	font-size:160%;
 }
-nav
-{
-	font-size:110%
+
+
+.navigation ul
+{	
+	display:flex;
+	justify-content: center;
+	position: fixed;
+	top:-10px;
+	list-style:none;
+	background:black;
+	width:95%;
+	border: 2px solid white;
 }
+
+.navigation a
+{
+	padding:0 5px 0 5px;
+	color:white;
+	text-decoration: none;
+	font: 115%, sans-serif;
+}
+
+.navigation a:hover
+{background:#1C1C1C;}
+
+
