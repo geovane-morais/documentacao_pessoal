@@ -53,7 +53,8 @@ h1
 	padding:0 5px 0 5px;
 	color:white;
 	text-decoration: none;
-	font: 115%, sans-serif;
+	font-size: 110%;
+	font-family: sans-serif;
 }
 
 .navigation a:hover
