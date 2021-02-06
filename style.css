@@ -1,27 +1,49 @@
+/***************Index.html****************/
 .page
+{
+	display:flex;
+	justify-content: center;
+	margin-top:10%;
+}
+
+.page div
 {
 	display: flex;	
 	flex-direction: column ;
 	align-items: center;
-	justify-content:flex-start;
-	font-family: Sans-serif;
-	font-size: 105%;
+
+	background-color: LightSteelBlue;
+	border: 5px solid black;
+	padding: 0px 15px 0px 15px;
+	
 }
 
-
-.backgroundApache2
+.page div nav ul
 {
-	background-color:#00008B;
-
-	/*background-image: url("images/background1.jpg");
-	background-size: cover;
-	background-attachment: fixed;*/
+	list-style:none;
+	margin:-13px 25px 10px 10px;
 }
 
-.pageApache2
+.page div nav ul a
 {
+	color:black;
+	font-size: 140%;
+	font-family: sans-serif;
+	text-decoration: none;
+}
 
+.page div nav ul a:hover
+{background:white;}
 
+h1
+{
+	font-size:170%;
+}
+
+/***********apache2.html / php.html**************/
+
+.page2
+{
 	/*Colocação da borda*/
 	max-width: 100%;
 	margin: 10px 1% 1% 1%;
@@ -36,12 +58,6 @@
 	color: #070707;
 }
 
-h1
-{
-	font-size:160%;
-}
-
-
 .navigation ul
 {	
 	display:flex;
@@ -51,7 +67,7 @@ h1
 	list-style:none;
 	background:black;
 	width:95%;
-	border: 2px solid white;
+	border: 3px solid white;
 }
 
 .navigation a
@@ -66,4 +82,8 @@ h1
 .navigation a:hover
 {background:#1C1C1C;}
 
-
+/***Fundo de todas as telas secundarias***/
+.background
+{
+	background-color:#00008B;
+}
