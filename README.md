@@ -1,2 +1,2 @@
 # documentacao_pessoal.github.io
-Deploy: https://geovane-morais.github.io/documentacao_pessoal/
+DEPLOY: https://geovane-morais.github.io/documentacao_pessoal/
