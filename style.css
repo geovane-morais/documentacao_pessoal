@@ -40,7 +40,7 @@ h1
 	font-size:35px;
 }
 
-/***********apache2.html / php.html**************/
+/******apache2.html / php.html / sshd.html *********/
 
 .page2
 {
@@ -79,8 +79,11 @@ h1
 	font-family: sans-serif;
 }
 
-.navigation a:hover
-{background:#1C1C1C;}
+
+.navigation ul a:hover
+{background:darkgray;}
+
+
 
 /***Fundo de todas as telas secundarias***/
 .background
