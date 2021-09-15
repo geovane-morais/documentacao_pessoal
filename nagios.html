@@ -27,9 +27,9 @@
 				<p> wget unzip zip autoconf gcc libc6 make apache2-utils libgd-dev</p>
 				<p> Criar o usuaio NAGIOS:</p>
 				<p> useradd nagios<p>
-				<p> #usermod -a -G nagios www-data</p>
+				<p> usermod -a -G nagios www-data</p>
 				<p> Da um configure na pasta no NAGIOS: </p>
-				<p> #./configure --with-httpd-conf=/etc/apache2/sites-enabled</p>
+				<p> ./configure --with-httpd-conf=/etc/apache2/sites-enabled</p>
 				<p> make all</p>
 				<p> make install </p> 
 				<p> make install-init</p>
