@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<title>NAGIOS</title>
+	</head>
+
+	<body  class="background">
+		<nav>
+			<div class="navigation">
+				<ul>
+					<li> <a href="index.html">INICIO<a/> </li>
+					<li> <a href="apache2.html">APACHE<a/> </li>
+					<li> <a href="php.html">PHP<a/> </li>
+					<li> <a href="sshd.html">SSHD<a/> </li>
+					<li> <a href="nagios.html">NAGIOS<a/> </li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="page2">
+				<p> Comando para baixar o NAGIOS:</p>
+				<p> wget https://assets.nagios.com/downloads/nagioscore/releases/nagios-4.4.6.tar.gz</p>
+				<p> Pacotes Necessarios:</p>
+				<p> wget unzip zip autoconf gcc libc6 make apache2-utils libgd-dev</p>
+				<p> Criar o usuaio NAGIOS:</p>
+				<p> useradd nagios<p>
+				<p> #usermod -a -G nagios www-data</p>
+				<p> Da um configure na pasta no NAGIOS: </p>
+				<p> #./configure --with-httpd-conf=/etc/apache2/sites-enabled</p>
+				<p> make all</p>
+				<p> make install </p> 
+				<p> make install-init</p>
+				<p> make install-commandmode</p>
+				<p> make install-config</p>
+				<p> make install-webconf</p>
+				<p> systemctl enable nagios.service</p>
+				<p> htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin</p>
+				<p> a2enmod cgi </p>
+				<p> systemctl restart apache2</p>
+				<p> systemctl start nagios</p>
+				<p> systemctl enable nagios</p>
+				<p> http://192.168.0.XX/nagios/</p>
+			</div>
+		</main>
+	</body>
+	
+</html>
