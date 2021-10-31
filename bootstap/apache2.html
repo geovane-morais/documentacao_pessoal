@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- BOOTSTRAP CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+        crossorigin="anonymous">
+
+		<!--<link rel="stylesheet" href="style.css">-->
+
+		<title>Apache2</title>
+	</head>
+
+	<body class="background">
+		<nav>
+			<div class="navigation">
+				<ul>
+					<li> <a href="index.html">INICIO<a/> </li>
+					<li> <a href="apache2.html">APACHE<a/> </li>
+					<li> <a href="php.html">PHP<a/> </li>
+					<li> <a href="sshd.html">SSHD<a/> </li>
+					<li> <a href="nagios.html">NAGIOS<a/> </li>
+					<li> <a href="vsfptd.html">VSFTPD<a/> </li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="page2">
+				<p>Use o comando "whereis" para descobrir onde estão os arquivos de instalação do apache</p>
+				<p># whereis apache2</p>
+				<p>O retorno do comando deve ser algo como:</p>
+				<p>/usr/sbin/apache2 /etc/apache2 /usr/lib/apache2 /usr/share/apache2 /usr/share/man/man8/apache2.8.gz</p>
+				<p>Onde:
+				<p>/usr/sbin/apache2 é o diretório do binário principal do apache;</p>
+				<p>/usr/lib/apache2 é a biblioteca do apache2;</p>
+				<p>/usr/share/apache são os objetos padrões do apache.</p>
+				<p>/usr/share/man/man8/apache2.8.gz é o manual do apache.</p>
+
+				<p>Reinicia ou para ou inicia o servidor Apache2:</p>
+				<p># /etc/init.d/apache2 restart | stop | start</p>
+				<p># systemctl restart | stop | start</p>
+				<p># service apache2 restart | stop | start</p>
+
+				<p>Verifica o status do servidor apache2</p>
+				<p># systemctl status apache2</p>
+
+				<p>Debugar um virtual host apache2</p>
+				<p># /usr/sbin/apache2ctl -S </p>
+
+				<p>Para criar um virtual host precisa criar um arquivo "exemplo.conf" na pasta "/etc/apache2/sites-enabled", dica: copia o modelo do defaut.conf</p>
+				<p>arquivo "/etc/hosts" configura os hostlocais da sua maquina, da oara criar novos hosts</p>
+				<p>Pasta "/etc" fica os arquivos de configuração do linux</p>
+				<p>Pasta "/var/www/" é o padrão para htmls do servidor<p>
+				<p>Pasta	"/var/log/apache2/" ficam os registros(acesso, erro)</p>
+			</div>
+		</main>
+		
+		<footer>
+			<p>
+				2021 Geovane Alexandre Morais - 
+				Todos os direitos reservados
+			</p>
+		</footer>
+	</body>
+	
+</html>
