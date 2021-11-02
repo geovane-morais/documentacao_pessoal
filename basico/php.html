@@ -25,14 +25,29 @@
 				<p> Para testar um codigo (web/console):</p>
 				<p> php -S localhost:8000 arquivo.php</p>
 				<p> php -f arquivo.php</p>
-				<p> estrutura de um documento em PHP:</p>
+				<p> limpe o arquivo "/var/log/apache2/error.log" para ficar melhor o debug</p>
+				<p> tail -f "/var/log/apache2/error.log" para monitorar o arquivo</p>
+				<p> <br/>estrutura de um documento em PHP:</p>
 				<p> &#60;? php  "scripts ficam ak" ?&#62;<p>
-				<p> comando "echo" imprimi informações</p>
-				<p> para imprimir mais informações "echo 'a' . 'b';" </p>
 				<p> "$foo = 0" cria uma variavel igual a zero</p>
 				<p> "$foo = &$bar" bar tem o endereço de foo, o que muda em um muda no outro</p>
-				<p> "$foo = array('a', 'b', ... , 'z'); cria um array de string </p> 
-				<p> limpe o arquivo "/var/log/apache2/error.log", para ficar melhor o debug</p>
+				<p> "$foo = array('a', 'b', ... , 'z'); cria um array de string </p>
+				<p> "$foo[2] = 'b'; Utiliza igual em C"</p>
+				<p> "$foo = new stdClass;" Cria uma classe</p>
+				<p> "$foo->name" Para se utilizar uma variavel na classe</p> 
+
+				<p> <br/>para imprimir mais informações "echo 'a' . 'b';" </p>
+				
+				<p><br/> "if (TRUE) : endif; De resto é igual a C</p>
+				<p> "var_dump($foo + $bar);" Contatena Variaveis</p>
+				<p> Switch case padrao igual em C</p>
+				<p> "foreach($foo as $bar);" Vai mandar uma posição de $foo em $bar por vez</p>
+				<p> Tratamento sem [] e é usado em arrays, matrizes,classes,etc</p>
+				<p> function name($foo,$bar){} Função igual int,void, não precisa ter retorno</p>
+				<p> function name(&$foo){} "&$foo" A variavel recebe as mudanças de dentro da funcao</p>
+				<p> </p>
+				<p> </p>
+
 			</div>
 		</main>
 	</body>
