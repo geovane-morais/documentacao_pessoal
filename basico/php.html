@@ -46,15 +46,63 @@
 				<p> function name($foo,$bar){} Função igual int,void, não precisa ter retorno</p>
 				<p> function name(&$foo){} "&$foo" A variavel recebe as mudanças de dentro da funcao</p>
 				<p> func_get_args(); Gera um array com as informações contidas dentro () da função</p>
-				<p> func_num_args(); Mostra a quantas variaveis estão contidas dentro () da função</p><br/>
-				<p> include ou inlude_once ou require ou require_once 'lib.php';</p>
+				<p> func_num_args(); Mostra a quantas variaveis estão contidas dentro () da função</p>
+				<p> $remove_acento =  function($str){}; Declara Função anonima</p>
+				<p> A ideia é armazenar o retorno da função na variavel</p>
+				<p> $remove_acento('mensagem') como usar a funcão anonima</p>
+				<p> </p>
+				<br/>
+				<p> include ou include_once ou require ou require_once 'lib.php';</p>
 				<p> INCLUI no projeto uma biblioteca escrita em PHP</p>
+				<br/>
+				<br/>
+				<p> array_map(callback,$c); vai rodar uma função com a variavel $c nela</p>
+				<p> Muito usado em variaveis que tenha array</p>
+				<p> </p>
+				<br/>
+				<p> Comandos para editar arquivos:</p>
+				<p> $texto = fopen('teste',$modo); comando para abri o arquivo, modo pesquisa na tabela</p>
+				<p> feof($texto) retorna verdadeira se o ponteiro aponta para dentro do arquivo</p>
+				<p> fgets($texto,$numero_letras) Le a linha que está o ponteiro, depende de onde o modo começou</p>
+				<p> fwrite($texto,"Linha1".PHP_EOL) escreve uma linha no arquivo</p>
+				<p> fclose($texto) fecha o arquivo salvo na variavel</p>
+				<p> file_put_contects($texto,'Conteudo de todo o arquivo') altera tudo</p>
+				<p> file_get_contents($texto) Le o arquivo todo</p>
+				<p> $texto = file('arquivo') cria um array com as linhas do arquivo</p>
+				<p> copy('local de origem','local de destino')</p>
+				<p> rename('Nome antigo','nome novo')</p>
+				<p> unlink($texto) remove o arquivo </p>
+				<p> file_exist('arquivo')Verifica se o arquivo existe</p>
+				<p> is_file('arquivo') verifica se a localização é mesmo de um arquivo</p>
+				<p> mkdir('/home/dir' cria o diretorio)</p>
+				<p> rmdir('/home/dir') remove o diretorio</p>
+				<p> scandir('/home/dir') mostra tudo que tem dentro por um array</p>
+				<p> is_dir('home/dir') já sabe neh</p>
+				<br/>
+				<p> Manipulação de strings:</p>
+				<p> strtoupper($string) deixa tudo na string maiusculo</p>
+				<p> strtolower($string) deixa tudo na string minusculo</p>
+				<p> substr($string,$começo,$fim) mostra onde cortar na string</p>
+				<p> str_pad($string,20,'*')  prenche uma string com outra</p>
+				<p> str_repeat($string,4) repete a string esse numero de vezes</p>
+				<p> str_replace($a,$b,$c) Função que substitui tudo que tenha $a em $c com o valor contido em $b</p>
+				<p> $a = 'goiaba'; $b = 'abacaxi', $c = 'Gosto de goiaba'</p>
+				<p> retorno 'Gosto de abacaxi'</p>
+				<p> strlen($string) traz a quantidade de letras</p>
+				<br/>
+				<p> Manitulando arrays:</p>
 				<p> </p>
 				<p> </p>
 				<p> </p>
 				<p> </p>
 				<p> </p>
 				<p> </p>
+				<p> </p>
+				<p> </p>
+				<br/>
+				<p> try{}catch(Exception $e){} formato para tratar erros do sistema</p>
+				<p> throw new Exception('Erro novo'); Cria uma mensagem de erro</p>
+				<br/>
 				<p> </p>
 			</div>
 		</main>
